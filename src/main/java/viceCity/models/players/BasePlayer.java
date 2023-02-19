@@ -21,14 +21,8 @@ public abstract class BasePlayer implements Player {
     }
 
     public void setName(String name) {
-        boolean nameNotUnique = false;
-        for (Gun gun : gunRepository.getModels()) {
-            if (gun.getName().equals(name)) {
-                nameNotUnique = true;
-            }
-        }
-        if (name == null || name.trim().isEmpty() || nameNotUnique) {
-            throw new NullPointerException(NAME_NULL);
+        if (name == null || name.trim().isEmpty() ) {
+            throw new NullPointerException(PLAYER_NULL_USERNAME);
         }
 
         this.name = name;
