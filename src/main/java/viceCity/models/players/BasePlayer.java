@@ -1,10 +1,7 @@
 package viceCity.models.players;
 
 import viceCity.models.guns.Gun;
-import viceCity.repositories.interfaces.GunRepository;
-import viceCity.repositories.interfaces.Repository;
-
-import java.util.ArrayList;
+import viceCity.repositories.interfaces.*;
 
 import static viceCity.common.ExceptionMessages.*;
 
